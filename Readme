@@ -1,0 +1,35 @@
+# Weather App
+
+## Overview
+This is a simple Weather App that provides real-time weather information of a given city. The user enters a city name and clicks the "Get Weather" button to fetch weather details like temperature, description, wind speed, and humidity.
+
+## Features
+- Displays weather information such as:
+  - Temperature
+  - Weather description
+  - Wind speed
+  - Humidity
+- Shows an error message if the city is not entered or if the API request fails.
+- Allows users to clear the input and weather info.
+
+## Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **Weather API**: OpenWeather API
+- **HTTP Requests**: Axios
+- **Icons**: Font Awesome (for weather icons)
+
+## Setup Instructions
+1. Clone or download this repository.
+2. Open the `index.html` file in your browser to view the app.
+3. Enter a city name and click "Get Weather" to see the weather details.
+4. Click "X" to clear the input field.
+
+## API Key
+The weather data is fetched from the OpenWeather API. You can obtain your own API key by registering at [OpenWeatherMap](https://openweathermap.org/api).
+
+## Troubleshooting
+- If the weather details are not displayed, ensure that the city name is correct and the API key is valid.
+- If the app does not load, check the browser console for errors related to the Axios request.
+
+## License
+This project is licensed under the MIT License.

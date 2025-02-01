@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1163/1163624.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h2>Weather App</h2>
+        </header>
+
+        <!-- Form Section -->
+        <section class="input-container">
+            <form id="weather-form" onsubmit="event.preventDefault(); getWeather();">
+                <input type="text" id="city" placeholder="Enter city name" aria-label="City name">
+                <button type="button" class="clear-btn" onclick="clearInput()" aria-label="Clear input">Clear</button>
+                <button type="submit" aria-label="Get weather">Get Weather</button>
+            </form>
+        </section>
+
+        <p class="error-message" id="error-message" role="alert"></p>
+
+        <!-- Weather Info Section -->
+        <section id="weather-info" aria-live="polite">
+            <h3 id="city-name"></h3>
+            <p id="date"></p>
+            <img id="icon" src="" alt="Weather Icon">
+            <p><i class="fas fa-thermometer-half"></i> <span id="temperature"></span></p>
+            <p><i class="fas fa-cloud"></i> <span id="description"></span></p>
+            <p><i class="fas fa-wind"></i> <span id="wind"></span></p>
+            <p><i class="fas fa-tint"></i> <span id="humidity"></span></p>
+        </section>
+
+        <footer>
+            <p>Weather data provided by <a href="https://openweathermap.org" target="_blank" rel="noopener noreferrer">OpenWeather</a>.</p>
+            <p>&copy; 2025 Weather App. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

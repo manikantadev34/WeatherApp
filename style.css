@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;      /* Vertically center the content */
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(32, 40, 119, 0.9), rgba(61, 131, 97, 0.9));
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0; /* Remove default margin */
+}
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;  /* Adds space between the h2 and the input container */
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 5px;
+}
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.9);
+    outline: none;
+}
+.clear-btn {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.2s, transform 0.2s;
+}
+.clear-btn:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+}
+button {
+    background: rgba(255, 105, 97, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: transform 0.2s, background 0.2s;
+    margin-top: 10px;
+}
+button:hover {
+    background: rgba(255, 69, 58, 0.9);
+    transform: scale(1.05);
+}
+#error-message {
+    color: rgba(255, 99, 99, 0.9);
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+    font-weight: bold;
+}
+#weather-info {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    color: rgba(255, 255, 255, 0.9);
+}
