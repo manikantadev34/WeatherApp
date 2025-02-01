@@ -6,12 +6,12 @@
 }
 body {
     display: flex;
-    justify-content: center;  /* Horizontally center the content */
-    align-items: center;      /* Vertically center the content */
+    justify-content: center; 
+    align-items: center;     
     height: 100vh;
     background: linear-gradient(135deg, rgba(32, 40, 119, 0.9), rgba(61, 131, 97, 0.9));
     color: rgba(255, 255, 255, 0.9);
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 .container {
     background: rgba(255, 255, 255, 0.2);
@@ -27,7 +27,7 @@ body {
 h2 {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 20px;  /* Adds space between the h2 and the input container */
+    margin-bottom: 20px;  
     color: #FFFFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }

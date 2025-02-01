@@ -25,7 +25,7 @@ This is a simple Weather App that provides real-time weather information of a gi
 1. Clone or download this repository.
 2. Open the `index.html` file in your browser to view the app.
 3. Enter a city name and click "Get Weather" to see the weather details.
-4. Click "X" to clear the input field.
+4. Click "Clear" to clear the input field.
 
 ## API Key
 The weather data is fetched from the OpenWeather API. You can obtain your own API key by registering at [OpenWeatherMap](https://openweathermap.org/api).
